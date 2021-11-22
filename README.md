@@ -24,7 +24,7 @@ it gives you 60 seconds and then it starts . I made this to pass my chemistry te
 
 # enjoy
 
-             __     __  __     _____    __     
+```             __     __  __     _____    __     
 |   |\/| /\ /  \   / _`/  \   /__`||  ||  \\ / 
 |___|  |/~~\\__/   \__>\__/   .__/|\__/|__/ |  
-                                               
+                                               ```
