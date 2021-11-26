@@ -19,7 +19,7 @@ it gives you 60 seconds and then it starts . I made this to pass my chemistry te
 
 
 
-
+i made a limited time version of it on request of @tupu4545 the file is pomodoro.py to start it follow the same steps but instead of main.py you have to type pomodoro.py  . I am thinking to make gui for it
 
 
 # enjoy
@@ -29,4 +29,4 @@ it gives you 60 seconds and then it starts . I made this to pass my chemistry te
 |___|  |/~~\\__/   \__>\__/   .__/|\__/|__/ |  
                                                ```
                                                
-                                               i made a limited time version of it on request of @tupu4545 the file is pomodoro.py to start it follow the same steps but instead of main.py you have to type pomodoro.py  . I am thinking to make gui for it
+                                               
