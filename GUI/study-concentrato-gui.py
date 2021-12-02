@@ -1,55 +1,48 @@
 from tkinter import *
 from tkinter import ttk
-import datetime
-import time
-import random
-import webbrowser
+
+def testing():
+    lol = int(min.get())
+    minutes = lol * 60
+    print(minutes)
 
 root = Tk()
-root.title("Study Concentrato")
+root.title("Study Conectrato")
 
-mainframe = ttk.Frame(root, padding="3 3 12 12")
-mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
+
+def clam():
+    s = ttk.Style()
+    s.theme_use('clam')
+def classic():
+    s = ttk.Style()
+    s.theme_use('classic')
+def alt():
+    s = ttk.Style()
+    s.theme_use('alt')
+def default():
+    s = ttk.Style()
+    s.theme_use('default')
+
+
+
+
+parent = ttk.Frame(root, padding="10 10 10 10")
+parent.grid(column=0, row=0, sticky=(N, W, E, S))
 root.columnconfigure(0, weight=1)
 root.rowconfigure(0, weight=1)
 
-def func_test_1():
-    webbrowser.open("https://www.youtube.com/watch?v=rwSJwzE7lAg")
+ttk.Label(parent, text="Enter Number Of Minutes : ").grid(column=2, row=1, sticky=E)
+min = StringVar()
+min_entry = ttk.Entry(parent, width=7, textvariable=min)
+min_entry.grid(column=4, row=1, sticky=(W, E))
 
-def func_test_2():
-    webbrowser.open("https://www.youtube.com/watch?v=fcZXfoB2f70")
+action = ttk.Button(root, text="Click Me To Start", default="active", command=testing).grid(column=3, row=3, sticky=W)
+root.bind("<Return>", testing)
 
-def func_test_3():
-    webbrowser.open("https://www.youtube.com/watch?v=tZGpRd-t7jg")
+ttk.Label(parent, text="Select Theme Or Leave it as it is ").grid(column=1, row=7, sticky=S)
+clam = ttk.Button(root, text="Clam", default="active", command=clam).grid(column=4, row=4, sticky=W)
+alt = ttk.Button(root, text="Alt", default="active", command=alt).grid(column=5, row=4, sticky=W)
+default = ttk.Button(root, text="Default", default="active", command=default).grid(column=6, row=4, sticky=W)
+classic = ttk.Button(root, text="Classic", default="active", command=classic).grid(column=7, row=4, sticky=W)
 
-def func_test_4():
-    webbrowser.open("https://www.youtube.com/watch?v=ZYzbalQ6Lg8")
-
-def current_position():
-    return [root.winfo_pointerx(), root.winfo_pointery()]
-
-pos1 = current_position()
-
-minutes = tk.IntVar()
-minutes_entry = ttk.Entry(mainframe, width=7, textvariable=minutes)
-minutes_entry.grid(column=2, row=1, sticky=(W, E))
-
-t_end = time.time() + 60 * minutes
-while time.time() < t_end :
-
-    time.sleep(0.5)
-    pos2 = current_position()
-    if not pos1 == pos2:
-       # run a command:
-        my_list = [func_test_1, func_test_2, func_test_3, func_test_4]
-        random.choice(my_list)()
-        
-        pos1 = pos2
-
-else:
-    webbrowser.open("https://www.youtube.com/watch?v=Zd9muK2M36c")
-
-
-
-
-
+root.mainloop()
