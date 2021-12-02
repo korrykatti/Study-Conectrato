@@ -5,6 +5,9 @@ import datetime
 import time
 import random
 
+def lofi():
+    webbrowser.open("https://www.youtube.com/watch?v=5qap5aO4i9A")
+
 def testing():
     lol = int(min.get())
     minutes = lol * 60
@@ -68,7 +71,7 @@ def default():
     s.theme_use('default')
 
 
-
+lofi = ttk.Button(root, text="Press To Play LOFI ( choose wisely ) ", default="active", command=lofi).grid(column=1, row=10, sticky=W)
 
 parent = ttk.Frame(root, padding="10 10 10 10")
 parent.grid(column=0, row=0, sticky=(N, W, E, S))
