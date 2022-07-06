@@ -22,7 +22,7 @@ i made a limited time version of it on request of @tupu4545 the file is pomodoro
 
 
 # GUI FINALLY MADE LMAO
-i hate it why i code instead of studying for my exams i seriously hate it .  i hate my life
+i hate it why i code instead of studying for my exams ( jee mains 2023 ) i seriously hate it .  i hate my life
 
 ## how to make GUI WORK
 
